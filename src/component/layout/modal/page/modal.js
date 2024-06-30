@@ -3,57 +3,15 @@ import './../css/modal.css'
 // component
 import {Team} from "./child/team";
 // image
-import banner from "../../../../original/image/progogram.jfif";
+import banner from "../../../../original/image/members/progogram.jfif";
 // icons
 import {IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconX} from "@tabler/icons-react";
 // link
 import {Link} from "react-router-dom";
+// action
+import {members} from "../../../actions/member/member";
 
 export const Modal = () => {
-    const members = [
-        {
-            name: 'علی راستی',
-            image: require('./../../../../original/image/ali.jfif'),
-            description: 'بازار یاب و طراح رابط کاربری خوش ذوق مرندی !',
-            instagram: 'https://www.instagram.com/alirasti.official?igsh=MWRxdnR5eGVvdGlkYw=='
-        },
-        {
-            name: 'مهدی محمد زاده',
-            image: require('./../../../../original/image/mahdi.jfif'),
-            description: 'بک اند دولوپر حرفه ای و با حوصله',
-            instagram: 'https://www.instagram.com/mhdiamz?igsh=a2NxNjFxenU4OXNv',
-            github: 'https://github.com/ismahdi',
-            linkedin: 'https://www.linkedin.com/in/mahdi-aghamohammadzadeh/',
-        },
-        {
-            name: 'پویا رحمان زاده',
-            image: require('./../../../../original/image/pouya.png'),
-            description: 'مغز متفکر و بهترین توسعه دهنده اپلیکیشن',
-            instagram: 'https://www.instagram.com/p1ouy3a?igsh=MW84cHQ2bXQyaGtzdA==',
-            github: 'https://github.com/PouyAium',
-            linkedin: 'https://www.linkedin.com/in/pouya-rahmanzadeh-7b5624254/',
-        },
-        {
-            name: 'مهدی ذوالفقار پور',
-            image: require('./../../../../original/image/sins.jpg'),
-            description: 'فرانت دولوپر خوش سلیقه و حساس',
-            instagram: '',
-        },
-        {
-            name: 'امیر اولیایی',
-            image: require('./../../../../original/image/amir.jfif'),
-            description: 'فرانت دولوپر خوش ذوق و دیتیل پرداز',
-            instagram: 'https://www.instagram.com/amir.olyai?igsh=MXh3cnN3dXlqNXlkcw==',
-            github: 'https://github.com/Amirmohammad-Olyaii',
-        },
-        {
-            name: 'سارا عبداللهی',
-            image: require('./../../../../original/image/sara.jpg'),
-            description: 'فرانت دولوپر با حوصله و خوش سلیقه',
-            instagram: 'https://www.instagram.com/lsara____pvl?igsh=ZW1jemcyYjl1cXdv',
-            github: 'https://github.com/Degianus',
-        },
-    ]
     return (
         <>
             <section className="modal fade" id="progogram-modal">
@@ -80,7 +38,8 @@ export const Modal = () => {
                                     <div className="card hover-card shadow card-body worker-card">
                                         <div className="d-flex justify-content-between align-items-center">
                                             <div className="progogram-title d-flex align-items-center">
-                                                <img alt="name" src={require('./../../../../original/image/reza.jfif')}
+                                                <img alt="name"
+                                                     src={require('../../../../original/image/members/reza.jfif')}
                                                      className="team-profile rounded-circle"/>
                                                 <p className="h6 card-title me-2 fw-bold">رضا مهوشی</p>
                                             </div>
@@ -110,7 +69,8 @@ export const Modal = () => {
                                     <div className="card hover-card shadow card-body worker-card">
                                         <div className="d-flex justify-content-between align-items-center">
                                             <div className="progogram-title d-flex align-items-center">
-                                                <img alt="name" src={require('./../../../../original/image/negin.jpg')}
+                                                <img alt="name"
+                                                     src={require('../../../../original/image/members/negin.jpg')}
                                                      className="team-profile rounded-circle"/>
                                                 <p className="h6 card-title me-2 fw-bold">نگین ملکی</p>
                                             </div>
@@ -133,7 +93,7 @@ export const Modal = () => {
                                         <div className="d-flex justify-content-between align-items-center">
                                             <div className="progogram-title d-flex align-items-center">
                                                 <img alt="name"
-                                                     src={require('./../../../../original/image/progogram.jfif')}
+                                                     src={require('../../../../original/image/members/progogram.jfif')}
                                                      className="team-profile rounded-circle"/>
                                                 <p className="h6 card-title me-2 fw-bold">درباره تیم</p>
                                             </div>

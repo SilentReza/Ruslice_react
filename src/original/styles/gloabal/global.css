@@ -1,0 +1,49 @@
+/* var */
+:root {
+    --theme: #212529;
+    --title: #FDEE19;
+    --text: #FEFEFE;
+    --small: 10px;
+    --small-medium: 12px;
+    --medium: 14px;
+    --big: 18px;
+}
+
+/* base style */
+* {
+    outline: none;
+    text-align: justify;
+    transition: 0.4s all;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: IRANYekanXFaNum, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    direction: rtl;
+    overflow-x: hidden !important;
+    background-color: var(--theme) !important;
+}
+
+/* scrollbar */
+body::-webkit-scrollbar, .modal-body::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb, .modal-body::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 8px;
+    background-color: var(--title);
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+    body {
+        padding-bottom: 120px;
+    }
+}

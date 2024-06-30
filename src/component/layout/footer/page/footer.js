@@ -3,7 +3,7 @@ import './../css/footer.css'
 // router
 import {Link} from "react-router-dom";
 // logo
-import Logo from '../../../../original/image/logo.png'
+import Logo from '../../../../original/image/global/logo.png'
 
 const Footer = () => {
     return (

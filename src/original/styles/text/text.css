@@ -1,0 +1,23 @@
+/* font */
+@font-face {
+    font-family: IRANYekanXFaNum;
+    src: url('./../../font/rokh/RokhFaNum-Medium.woff') format('woff');
+}
+
+/* text and fonts */
+.text-site, .card-title {
+    color: var(--title) !important;
+}
+
+.card-text {
+    line-height: 30px !important;
+    color: var(--text) !important;
+}
+
+.font-medium {
+    font-size: var(--medium);
+}
+
+.font-small {
+    font-size: var(--small-medium);
+}

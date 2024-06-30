@@ -1,7 +1,7 @@
 // router add
 import {Route, Routes} from "react-router-dom";
 // routes
-import {routes} from "../../../actions/route/route";
+import {routes} from "../../actions/route/route";
 // components
 // import {Home} from "../../../pages/home/page/home";
 // import {About} from "../../../pages/about/page/about";

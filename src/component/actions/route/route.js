@@ -1,42 +1,50 @@
+// icons
+import {
+    IconBooks,
+    IconHome,
+    IconToolsKitchen,
+    IconPhoneCall,
+    IconBrandJuejin
+} from "@tabler/icons-react";
+
 // base routes
-export const routes = [
-    {
-        name: 'home',
-        address: '/',
-        group: 'home'
-    },
-    {
-        name: 'about',
-        address: '/about',
-        group: 'about'
-    },
-    {
-        name: 'connect',
-        address: '/connect',
-        group: 'connect'
-    },
-    {
-        name: 'branch',
-        address: '/branch',
-        group: 'branch'
-    },
-    {
-        name: 'menu',
-        address: '/menu/:name',
-        group: 'menu'
-    },
-    // api
-    {
-        name: 'api',
-        address: 'https://dashboard.emaratsaran.ir/api/',
-        group: 'api'
-    },
-    {
-        name: 'image',
-        address_item: 'https://dashboard.emaratsaran.ir/uploads/suggestions/images/',
-        address_worker: 'https://dashboard.emaratsaran.ir/uploads/workers/images/',
-        address_game: 'https://dashboard.emaratsaran.ir/uploads/games/images/',
-        address_gallery: 'https://dashboard.emaratsaran.ir/storage/gallery/users/images/',
-        group: 'image'
-    },
-]
+export const routes = {
+    client: [
+        {
+            icon: <IconHome/>,
+            label: 'خانه',
+            address: '/',
+            group: 'home'
+        },
+        {
+            icon: <IconToolsKitchen/>,
+            label: 'منو',
+            address: '/branch',
+            group: 'branch'
+        },
+        {
+            icon: <IconBooks/>,
+            label: 'درباره',
+            address: '/about',
+            group: 'about'
+        },
+        {
+            icon: <IconPhoneCall/>,
+            label: 'تماس',
+            address: '/connect',
+            group: 'connect'
+        },
+    ],
+    api: [
+        {
+            name: 'api',
+            address: 'https://ruslice.co/api/',
+            group: 'api'
+        },
+        {
+            name: 'image',
+            address: 'https://ruslice.co/storage/gallery/users/images/',
+            group: 'image'
+        },
+    ]
+}
