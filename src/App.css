@@ -1,8 +1,12 @@
 /* import text */
-@import "original/styles/text/text.css";
+@import "global/styles/text/text.css";
 /* import buttons */
-@import "original/styles/button/button.css";
+@import "global/styles/button/button.css";
 /* import global */
-@import "original/styles/gloabal/global.css";
+@import "global/styles/gloabal/global.css";
 /* import card */
-@import "original/styles/card/card.css";
+@import "global/styles/card/card.css";
+/* import slider */
+@import "global/styles/swiper/slider.css";
+/* modal */
+@import "global/styles/modal/modal.css";

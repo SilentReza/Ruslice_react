@@ -1,10 +1,7 @@
 // icons
 import {
-    IconBooks,
     IconHome,
     IconToolsKitchen,
-    IconPhoneCall,
-    IconBrandJuejin
 } from "@tabler/icons-react";
 
 // base routes
@@ -19,32 +16,15 @@ export const routes = {
         {
             icon: <IconToolsKitchen/>,
             label: 'منو',
-            address: '/branch',
+            address: '/branch/:branchName',
             group: 'branch'
-        },
-        {
-            icon: <IconBooks/>,
-            label: 'درباره',
-            address: '/about',
-            group: 'about'
-        },
-        {
-            icon: <IconPhoneCall/>,
-            label: 'تماس',
-            address: '/connect',
-            group: 'connect'
         },
     ],
     api: [
         {
             name: 'api',
-            address: 'https://ruslice.co/api/',
+            address: 'https://ruslice.co/api',
             group: 'api'
-        },
-        {
-            name: 'image',
-            address: 'https://ruslice.co/storage/gallery/users/images/',
-            group: 'image'
         },
     ]
 }

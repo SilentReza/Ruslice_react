@@ -1,12 +1,10 @@
-// global css
+// global style
 import './App.css';
 // seo
 import {Seo} from "./component/actions/seo/seo";
 // global components
-import {Modal} from "./component/layout/modal/page/modal";
 import Footer from "./component/layout/footer/page/footer";
 import {PageRouter} from "./component/layout/router/router";
-import Header from "./component/layout/header/page/head";
 
 function App() {
     return (
@@ -18,9 +16,7 @@ function App() {
                 type="webapp"
                 name="progogram"
             />
-            <Header/>
             <PageRouter/>
-            <Modal/>
             <Footer/>
         </>
     );

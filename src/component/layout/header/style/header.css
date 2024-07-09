@@ -1,0 +1,22 @@
+/*  logo */
+.logo {
+    height: 40px !important;
+    width: 70px !important;
+    object-fit: cover;
+}
+
+.logo-big {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.active {
+    font-weight: 600;
+    color: var(--title) !important;
+}
