@@ -5,6 +5,10 @@
     object-fit: cover;
 }
 
+.logo-medium {
+    height: 50px !important;
+}
+
 .logo-big {
     height: 100px;
     width: 100px;
@@ -12,11 +16,19 @@
 }
 
 .navbar-nav {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row !important;
+    justify-content: space-between !important;
 }
 
 .active {
     font-weight: 600;
+    color: var(--title) !important;
+}
+
+.select-category {
+    border: 1px solid var(--title) !important;
+}
+
+.select-category .text-white {
     color: var(--title) !important;
 }

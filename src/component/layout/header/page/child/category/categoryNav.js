@@ -13,14 +13,15 @@ const CategoryNav = (props) => {
                             <h5 className={'text-white fw-bold mb-0 text-center'}>انتخاب دسته بندی</h5>
                         </div>
                         <div className={'modal-divider d-flex justify-content-center px-4'}>
-                            <img src={divider} alt={'divider'} className={'divider w-100'}/>
+                            <img src={divider} alt={'divider'} className={'divider'}/>
                         </div>
                         <div className={'modal-body'}>
                             <div className={'row'}>
                                 {props.categories.map((category, index) =>
                                     <>
-                                        <div key={index} className={'col-lg-4 col-6 mb-3'}>
-                                            <Category category={category}/>
+                                        <div key={index} className={'col-lg-3 col-6 mb-3'}>
+                                            <Category index={props.index} select={props.select}
+                                                      changeCategory={props.changeCategory} category={category}/>
                                         </div>
                                     </>
                                 )}

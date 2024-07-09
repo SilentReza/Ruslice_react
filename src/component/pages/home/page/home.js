@@ -21,7 +21,7 @@ const HeaderHome = () => {
                         <IconBrandJuejin
                             className={'d-md-none d-inline-block align-middle'} color={'#FEFEFE'}
                         />
-                        <section id={'menu-collapse'} className={'collapse navbar-collapse justify-content-end'}>
+                        <section id={'page-collapse'} className={'collapse navbar-collapse justify-content-end'}>
                             <ul className={'navbar-nav nav pe-1 mt-lg-0 mt-2'}>
                                 <li className={'nav-item'}>
                                     <Link id={'cafe'} to={'/branch/cafe'} className={'nav-link'}>

@@ -19,11 +19,10 @@ import request from "../../../../repository/request";
 import {routes} from "../../../actions/route/route";
 
 
-const Header = () => {
+const Header = (props) => {
     const [categories, setCategory] = useState([])
     const {branchName} = useParams();
     useEffect(() => {
-        console.log(branchName)
         const options = {}
         request.get(`${routes.api[0].address}/categories`, options
             , (result) => {
@@ -31,9 +30,11 @@ const Header = () => {
                 newArray = result.data;
                 newArray = newArray.filter((item) => item.type === branchName);
                 setCategory(newArray)
+                document.getElementById('category-toggler').click()
             }
         )
     }, [branchName]);
+
     return (
         <>
             <header className={'header py-4 container'}>
@@ -43,23 +44,26 @@ const Header = () => {
                             <img alt={'logo'} src={Logo} className={'logo'}/>
                         </Link>
                         <IconBrandJuejin
-                            data-bs-target={'#menu-collapse'}
+                            data-bs-target={'#page-collapse'}
                             data-bs-toggle={'collapse'}
                             className={'d-md-none d-inline-block align-middle'} color={'#FEFEFE'}
                         />
-                        <section id={'menu-collapse'} className={'collapse show navbar-collapse justify-content-end'}>
+                        <section id={'page-collapse'} className={'collapse show navbar-collapse justify-content-end'}>
                             <ul className={'navbar-nav nav pe-1 mt-lg-0 mt-2'}>
                                 {categories.map((category, indexNav) =>
                                     <>
                                         {indexNav <= 2 ? (
                                             <>
-                                                <NavLink key={category.id} {...category} />
+                                                <NavLink changeCategory={props.changeCategory} select={props.select}
+                                                         key={category.id} category={category}/>
                                             </>
                                         ) : null}
                                     </>
                                 )}
                                 <li className={'nav-item'}>
-                                    <Link data-bs-toggle={'modal'} to={'#category-modal'} className={'nav-link'}>
+                                    <Link id={'category-toggler'} data-bs-toggle={'modal'}
+                                          to={'#category-modal'}
+                                          className={'nav-link'}>
                                         انتخاب
                                         <IconChevronLeft size={12}/>
                                     </Link>
@@ -68,7 +72,7 @@ const Header = () => {
                         </section>
                     </section>
                 </nav>
-                <CategoryNav categories={categories}/>
+                <CategoryNav select={props.select} changeCategory={props.changeCategory} categories={categories}/>
             </header>
         </>
     )
