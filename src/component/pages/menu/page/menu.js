@@ -13,6 +13,7 @@ import {routes} from "../../../actions/route/route";
 // @ts-ignore
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+// divider
 import divider from "../../../../global/image/client/divider.png";
 
 const MenuItems = () => {

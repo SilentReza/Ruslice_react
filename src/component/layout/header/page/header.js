@@ -9,8 +9,7 @@ import NavLink from "./child/links/navLink";
 import CategoryNav from "./child/category/categoryNav";
 // icons
 import {
-    IconBrandJuejin,
-    IconChevronLeft
+    IconChevronLeft, IconCoffee, IconToolsKitchen
 } from "@tabler/icons-react";
 // hook
 import {useEffect, useState} from "react";
@@ -43,12 +42,34 @@ const Header = (props) => {
                         <Link to={'/'} className={'navbar-brand me-0'}>
                             <img alt={'logo'} src={Logo} className={'logo'}/>
                         </Link>
-                        <IconBrandJuejin
-                            data-bs-target={'#page-collapse'}
-                            data-bs-toggle={'collapse'}
-                            className={'d-md-none d-inline-block align-middle'} color={'#FEFEFE'}
-                        />
-                        <section id={'page-collapse'} className={'collapse show navbar-collapse justify-content-end'}>
+                        <Link
+                            to={branchName === 'restaurant' ? '/branch/cafe' : '/branch/restaurant'}
+                            className={'navbar-brand me-0'}>
+                            {branchName === 'restaurant' ?
+                                (
+                                    <>
+                                        <button className={'btn btn-outline-site px-4'}>
+                                            <IconCoffee
+                                                className={'d-md-none d-inline-block align-middle ms-1'}
+                                            />
+                                            مشاهده کافه
+                                        </button>
+                                    </>
+                                ) :
+                                (
+                                    <>
+                                        <button className={'btn btn-outline-site'}>
+                                            <IconToolsKitchen
+                                                className={'d-md-none d-inline-block align-middle ms-1'}
+                                            />
+                                            مشاهده رستوران
+                                        </button>
+                                    </>
+                                )
+                            }
+                        </Link>
+                        <section id={'page-collapse'}
+                                 className={'collapse show navbar-collapse justify-content-end'}>
                             <ul className={'navbar-nav nav pe-1 mt-lg-0 mt-2'}>
                                 {categories.map((category, indexNav) =>
                                     <>
