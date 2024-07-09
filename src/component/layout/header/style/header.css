@@ -44,6 +44,6 @@
         right: 0 !important;
         left: 0 !important;
         z-index: 1030 !important;
-        border-radius: 0 30px !important;
+        border-radius: 0 0 30px 30px !important;
     }
 }
