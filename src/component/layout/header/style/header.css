@@ -34,6 +34,10 @@
 }
 
 @media screen and (max-width: 900px) {
+    .header {
+        margin-bottom: 50px !important;
+    }
+
     header {
         margin-bottom: 90px !important;
     }

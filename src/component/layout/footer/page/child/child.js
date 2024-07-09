@@ -8,7 +8,7 @@ import owner from './../../../../../global/image/members/reza.webp'
 import negin from './../../../../../global/image/members/negin.jpg';
 import divider from "./../../../../../global/image/client/divider.png";
 // icons
-import {IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconX} from "@tabler/icons-react";
+import {IconBrandGithub, IconBrandInstagram, IconBrandLinkedin} from "@tabler/icons-react";
 // team
 import {members} from "../../../../actions/member/member";
 // link

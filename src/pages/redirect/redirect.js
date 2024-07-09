@@ -8,7 +8,7 @@ const Redirect = () => {
     useEffect(() => {
         navigate('/');
         console.log('salam')
-    }, []);
+    });
     return (
         <></>
     )
