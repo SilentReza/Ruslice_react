@@ -37,33 +37,29 @@ const Header = (props) => {
     return (
         <>
             <header className={'header py-4 container'}>
-                <nav className={'navbar fixed-top bg-dark navbar-dark navbar-expand-md shadow rounded-bottom-5'}>
+                <nav className={'navbar bg-dark navbar-dark navbar-expand-md shadow'}>
                     <section className={'container-fluid'}>
                         <Link to={'/'} className={'navbar-brand me-0'}>
                             <img alt={'logo'} src={Logo} className={'logo'}/>
                         </Link>
                         <Link
                             to={branchName === 'restaurant' ? '/branch/cafe' : '/branch/restaurant'}
-                            className={'navbar-brand me-0'}>
+                            className={'btn btn-outline-site py-2 font-medium me-0 navbar-toggler'}>
                             {branchName === 'restaurant' ?
                                 (
                                     <>
-                                        <button className={'btn btn-outline-site px-4'}>
-                                            <IconCoffee
-                                                className={'d-md-none d-inline-block align-middle ms-1'}
-                                            />
-                                            مشاهده کافه
-                                        </button>
+                                        <IconCoffee
+                                            className={'d-md-none d-inline-block align-middle ms-1'}
+                                        />
+                                        مشاهده کافه
                                     </>
                                 ) :
                                 (
                                     <>
-                                        <button className={'btn btn-outline-site'}>
-                                            <IconToolsKitchen
-                                                className={'d-md-none d-inline-block align-middle ms-1'}
-                                            />
-                                            مشاهده رستوران
-                                        </button>
+                                        <IconToolsKitchen
+                                            className={'d-md-none d-inline-block align-middle ms-1'}
+                                        />
+                                        مشاهده رستوران
                                     </>
                                 )
                             }

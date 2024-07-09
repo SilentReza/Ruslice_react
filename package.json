@@ -1,7 +1,8 @@
 {
-  "name": "ruslice_new",
+  "name": "ruslice",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ruslice.co",
   "dependencies": {
     "@tabler/icons-react": "^3.7.0",
     "@testing-library/jest-dom": "^5.17.0",

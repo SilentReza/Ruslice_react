@@ -32,3 +32,18 @@
 .select-category .text-white {
     color: var(--title) !important;
 }
+
+@media screen and (max-width: 900px) {
+    header {
+        margin-bottom: 90px !important;
+    }
+
+    .navbar {
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        left: 0 !important;
+        z-index: 1030 !important;
+        border-radius: 0 30px !important;
+    }
+}

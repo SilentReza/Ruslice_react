@@ -25,15 +25,6 @@ const MenuItems = () => {
     useEffect(() => {
         AOS.init()
         AOS.refresh();
-        const options = {}
-        request.get(`${routes.api[0].address}/${branchName}/items`, options
-            , (result) => {
-                let newArray = result.data;
-                newArray = newArray.filter((item) => item.category_id === 7 && item.status === 1);
-                setItem(newArray)
-                setArray(result.data)
-            }
-        )
         if (branchName === 'restaurant') {
             setSelect(3)
             setTitle('فست فود')
@@ -41,6 +32,19 @@ const MenuItems = () => {
             setSelect(7)
             setTitle('کیک')
         }
+        const options = {}
+        request.get(`${routes.api[0].address}/${branchName}/items`, options
+            , (result) => {
+                let newArray = result.data;
+                if (branchName === 'restaurant') {
+                    newArray = newArray.filter((item) => item.category_id === 3 && item.status === 1);
+                } else {
+                    newArray = newArray.filter((item) => item.category_id === 7 && item.status === 1);
+                }
+                setItem(newArray)
+                setArray(result.data)
+            }
+        )
     }, [branchName]);
 
     const changeCategory = (id, type, title) => {

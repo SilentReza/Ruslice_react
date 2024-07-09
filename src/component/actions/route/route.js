@@ -20,6 +20,14 @@ export const routes = {
             group: 'branch'
         },
     ],
+    redirect: [
+        {
+            icon: <IconToolsKitchen/>,
+            label: 'ریدایرکت',
+            address: '/menu/list',
+            group: 'redirect'
+        },
+    ],
     api: [
         {
             name: 'api',

@@ -16,7 +16,7 @@ const CategoryNav = (props) => {
                             <img src={divider} alt={'divider'} className={'divider'}/>
                         </div>
                         <div className={'modal-body'}>
-                            <div className={'row'}>
+                            <div className={'row justify-content-center'}>
                                 {props.categories.map((category, index) =>
                                     <>
                                         <div key={index} className={'col-lg-3 col-6 mb-3'}>
