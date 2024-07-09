@@ -29,11 +29,17 @@ const MenuItems = () => {
             , (result) => {
                 let newArray = result.data;
                 newArray = newArray.filter((item) => item.category_id === 7 && item.status === 1);
-                setSelect(7)
                 setItem(newArray)
                 setArray(result.data)
             }
         )
+        if (branchName === 'restaurant') {
+            setSelect(3)
+            setTitle('فست فود')
+        } else {
+            setSelect(7)
+            setTitle('کیک')
+        }
     }, [branchName]);
 
     const changeCategory = (id, type, title) => {
