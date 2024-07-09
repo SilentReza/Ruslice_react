@@ -38,7 +38,7 @@ const Header = (props) => {
     return (
         <>
             <header className={'header py-4 container'}>
-                <nav className={'navbar navbar-dark navbar-expand-md shadow'}>
+                <nav className={'navbar fixed-top bg-dark navbar-dark navbar-expand-md shadow rounded-bottom-5'}>
                     <section className={'container-fluid'}>
                         <Link to={'/'} className={'navbar-brand me-0'}>
                             <img alt={'logo'} src={Logo} className={'logo'}/>
