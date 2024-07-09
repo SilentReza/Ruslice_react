@@ -23,7 +23,7 @@ export const routes = {
     api: [
         {
             name: 'api',
-            address: 'https://ruslice.co/api',
+            address: 'https://dash.ruslice.co/api',
             group: 'api'
         },
     ]
