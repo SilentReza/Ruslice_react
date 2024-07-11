@@ -5,20 +5,19 @@
 }
 
 .modal-dialog {
-    position: absolute !important;
+    position: fixed !important;
     bottom: -3px !important;
     left: 0 !important;
     right: 0 !important;
     margin-bottom: 0 !important;
     height: auto !important;
     max-height: 90% !important;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
     background-color: transparent !important;
 }
 
-.modal-dialog::-webkit-scrollbar, .modal-body::-webkit-scrollbar,
-.modal-content::-webkit-scrollbar, .modal::-webkit-scrollbar {
-    display: none !important;
+.modal-dialog::-webkit-scrollbar {
+    display: none;
 }
 
 .modal.show .modal-dialog {
@@ -35,10 +34,4 @@
 .modal-content {
     width: 100% !important;
     background-color: var(--theme) !important;
-}
-
-.modal-body {
-    height: auto !important;
-    max-height: 90% !important;
-    overflow-y: scroll;
 }
