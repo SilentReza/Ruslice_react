@@ -35,4 +35,9 @@
 .modal-content {
     width: 100% !important;
     background-color: var(--theme) !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.modal-body {
+    -webkit-overflow-scrolling: touch !important;
 }
