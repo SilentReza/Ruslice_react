@@ -19,14 +19,14 @@ export const Modal = () => {
     return (
         <>
             <section className="modal fade" id="progogram-modal">
-                <div className="modal-dialog modal-xl">
-                    <div className={'modal-header pt-4 pb-1 border-0 justify-content-center'}>
-                        <h5 className={'text-white fw-bold mb-0 text-center'}>تیم پروگوگرام</h5>
-                    </div>
-                    <div className={'modal-divider d-flex justify-content-center px-4'}>
-                        <img src={divider} alt={'divider'} className={'divider'}/>
-                    </div>
+                <div className="modal-dialog modal-dialog-scrollable modal-xl">
                     <div className="modal-content">
+                        <div className={'modal-header pt-4 pb-1 border-0 justify-content-center'}>
+                            <h5 className={'text-white fw-bold mb-0 text-center'}>تیم پروگوگرام</h5>
+                        </div>
+                        <div className={'modal-divider d-flex justify-content-center px-4'}>
+                            <img src={divider} alt={'divider'} className={'divider'}/>
+                        </div>
                         <div className="modal-body text-center">
                             <div className="row justify-content-center">
                                 {members.map((member, number) => (

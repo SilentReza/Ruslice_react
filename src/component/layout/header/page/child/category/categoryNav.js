@@ -7,7 +7,7 @@ const CategoryNav = (props) => {
     return (
         <>
             <section className={'modal fade'} id={'category-modal'}>
-                <div className={'modal-dialog modal-xl'}>
+                <div className={'modal-dialog modal-dialog-scrollable modal-xl'}>
                     <div className={'modal-content'}>
                         <div className={'modal-header pt-4 pb-1 border-0 justify-content-center'}>
                             <h5 className={'text-white fw-bold mb-0 text-center'}>انتخاب دسته بندی</h5>
