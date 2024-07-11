@@ -12,7 +12,7 @@
     margin-bottom: 0 !important;
     height: auto !important;
     max-height: 90% !important;
-    overflow-y: scroll;
+    overflow-y: auto;
     background-color: transparent !important;
     -webkit-overflow-scrolling: touch !important;
 }
