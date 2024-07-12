@@ -66,7 +66,7 @@ const Header = (props) => {
                         </Link>
                         <section id={'page-collapse'}
                                  className={'collapse show navbar-collapse justify-content-end'}>
-                            <ul className={'navbar-nav nav pe-1 mt-lg-0 mt-2'}>
+                            <ul className={'navbar-nav align-items-center nav pe-1 mt-lg-0 mt-2'}>
                                 {categories.map((category, indexNav) =>
                                     <>
                                         {indexNav <= 2 ? (
@@ -80,9 +80,9 @@ const Header = (props) => {
                                 <li className={'nav-item'}>
                                     <Link id={'category-toggler'} data-bs-toggle={'modal'}
                                           to={'#category-modal'}
-                                          className={'nav-link'}>
+                                          className={'nav-link category-select'}>
                                         انتخاب
-                                        <IconChevronLeft size={12}/>
+                                        <IconChevronLeft size={17}/>
                                     </Link>
                                 </li>
                             </ul>

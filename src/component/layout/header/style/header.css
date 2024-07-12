@@ -33,6 +33,11 @@
     color: var(--title) !important;
 }
 
+.category-select {
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
 @media screen and (max-width: 900px) {
     .header {
         margin-bottom: 50px !important;

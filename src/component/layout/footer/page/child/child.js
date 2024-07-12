@@ -8,7 +8,7 @@ import owner from './../../../../../global/image/members/reza.webp'
 import negin from './../../../../../global/image/members/negin.jpg';
 import divider from "./../../../../../global/image/client/divider.png";
 // icons
-import {IconBrandGithub, IconBrandInstagram, IconBrandLinkedin} from "@tabler/icons-react";
+import {IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconX} from "@tabler/icons-react";
 // team
 import {members} from "../../../../actions/member/member";
 // link
@@ -19,10 +19,13 @@ export const Modal = () => {
     return (
         <>
             <section className="modal fade" id="progogram-modal">
-                <div className="modal-dialog modal-dialog-scrollable modal-xl">
+                <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
                     <div className="modal-content">
                         <div className={'modal-header pt-4 pb-1 border-0 justify-content-center'}>
-                            <h5 className={'text-white fw-bold mb-0 text-center'}>تیم پروگوگرام</h5>
+                            <h5 className={'text-white fw-bold mb-0 text-center'}>
+                                تیم پروگوگرام
+                                <IconX data-bs-dismiss={'modal'} size={14} className={'align-middle me-2'}/>
+                            </h5>
                         </div>
                         <div className={'modal-divider d-flex justify-content-center px-4'}>
                             <img src={divider} alt={'divider'} className={'divider'}/>

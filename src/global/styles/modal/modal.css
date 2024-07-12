@@ -4,14 +4,9 @@
     display: none;
 }
 
-.modal-dialog {
+.modal-content {
     color: var(--title) !important;
     background-color: var(--theme) !important;
     border-top: 3px solid var(--title) !important;
-    border-radius: 20px 20px 0 0 !important;
-}
-
-.modal-content {
-    width: 100% !important;
-    background-color: var(--theme) !important;
+    border-radius: 20px !important;
 }
